@@ -1,0 +1,118 @@
+nav {
+  .morent {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px 0 60px;
+    width: 100%;
+    height: 124px;
+    align-items: center;
+    .mor {
+      display: flex;
+      justify-content: space-between;
+      
+      div{
+        display: flex;
+        align-items: center;
+        margin-right: 64px;
+        position: relative;
+        h1{
+            color: #3563E9;
+            font-weight: 500;
+        }
+        input{
+            padding: 12px 12px 12px 64px;
+            width: 412px;
+            
+            border: 1px solid #C3D4E966;
+            border-radius: 8px;
+        }
+        i{
+            font-size: 19px;
+            color: #596780;
+        }
+        .ibir{
+            position: absolute;
+            top: 12px;
+            left: 22px;
+
+        }
+        .iiki{
+            position: absolute;
+            top: 12px;
+            right: 16px;
+        }
+        
+      }
+    .iuc{
+            display: none;
+            margin-right: 24px;
+            z-index: 1;
+            border: 1px solid #C3D4E966;
+            padding: 13px;
+            border-radius: 8px;
+        }}
+  }
+  .about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 220px;
+    i{
+        font-size: 22px;
+        border-radius: 50%;
+
+    }
+    div{
+        h2{
+            display: none;
+        }
+        img{
+            font-size: 22px;
+        }
+    }
+
+  
+
+}
+@media screen and (max-width:375px) {
+    .morent{
+       
+        margin-top: 92px;
+        flex-direction: column;
+       .mor{
+        input{
+            width: 263px;
+        }
+        .iiki{
+            display: none;
+        }
+        .iuc{
+            
+            margin-left: -40px;
+            display: inline;
+        }
+        
+       }
+    
+    }
+
+    .about{
+        i{
+            display: none;
+        }
+        div{
+            position: absolute;
+            display: flex;
+            width: 239px;
+            
+            top: 32px;
+            h2{
+                display: block;
+                color: #3563E9;
+            font-weight: 500;
+                margin-right: 191px;
+            }
+        }
+    }
+}
+}
