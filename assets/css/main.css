@@ -121,12 +121,12 @@ nav .about div img {
   }
 }
 
-section .carbox {
+section .containercar .carbox {
   display: flex;
   justify-content: space-between;
   width: 90%;
 }
-section .carbox .cara {
+section .containercar .carbox .cara {
   background-color: #54a6ff;
   overflow: hidden;
   width: 604px;
@@ -136,7 +136,7 @@ section .carbox .cara {
   flex-direction: column-reverse;
   border-radius: 8px;
 }
-section .carbox .cara button {
+section .containercar .carbox .cara button {
   background-color: #3563e9;
   height: 44px;
   width: 120px;
@@ -146,7 +146,8 @@ section .carbox .cara button {
   padding: 0px 20px 0px 20px;
   color: white;
 }
-section .carbox .cara .divh2 {
+section .containercar .carbox .cara .divh2 {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -155,67 +156,172 @@ section .carbox .cara .divh2 {
   height: 200px;
   color: white;
 }
-section .carbox .cara .divimg {
+section .containercar .carbox .cara .divimg {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
-section .carbox .cara .divimg img {
+section .containercar .carbox .cara .divimg img {
   width: 406px;
   height: 116px;
   z-index: 1;
 }
-section .carbox .cara .box {
+section .containercar .carbox .cara .box {
   background-color: rgba(84, 167, 255, 0);
   border: 6px solid rgba(255, 255, 255, 0.5960784314);
   border-radius: 50%;
   position: absolute;
 }
-section .carbox .cara .box1 {
+section .containercar .carbox .cara .box1 {
   height: 775px;
   width: 775px;
   left: -157px;
   top: -83px;
 }
-section .carbox .cara .box2 {
+section .containercar .carbox .cara .box2 {
   height: 650px;
   width: 650px;
   left: -95px;
   top: -20px;
 }
-section .carbox .cara .box3 {
+section .containercar .carbox .cara .box3 {
   height: 525px;
   width: 525px;
   left: -32px;
   top: 42px;
 }
-section .carbox .cara .box4 {
+section .containercar .carbox .cara .box4 {
   height: 400px;
   width: 400px;
   left: 30px;
   top: 105px;
 }
-section .carbox .cara .box5 {
+section .containercar .carbox .cara .box5 {
   height: 275px;
   width: 275px;
   left: 93px;
   top: 167px;
 }
-section .carbox .cara .box6 {
+section .containercar .carbox .cara .box6 {
   height: 150px;
   width: 150px;
   left: 155px;
   top: 230px;
 }
-section .carb {
-  background-color: #3563E9;
+section .containercar .carb {
+  background-color: #3563e9;
   overflow: hidden;
   width: 604px;
   height: 360px;
   border-radius: 8px;
   position: relative;
+  display: flex;
+  flex-direction: column-reverse;
 }
-section .carb .rum {
+section .containercar .carb button {
+  background-color: #54a6ff;
+  height: 44px;
+  width: 120px;
+  left: 0px;
+  top: 180px;
+  border-radius: 4px;
+  padding: 0px 20px 0px 20px;
+  color: white;
+}
+section .containercar .carb .div1h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 272px;
+  height: 200px;
+  color: white;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+section .containercar .carb .div1img {
+  display: flex;
+  justify-content: center;
+}
+section .containercar .carb .div1img img {
+  width: 406px;
+  height: 116px;
+  z-index: 1;
+}
+section .containercar .carb .rum {
   display: flex;
   position: absolute;
   top: 0%;
+}
+@media screen and (max-width: 375px) {
+  section .containercar .carb {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  section .carbox {
+    flex-direction: column;
+    justify-content: center;
+  }
+  section .carbox .cara {
+    height: 232px;
+    width: 327px;
+    border-radius: 10px;
+    margin-left: -24px;
+  }
+}
+section .locations {
+  display: flex;
+  width: 90%;
+}
+section .locations .rdio {
+  max-width: 582px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 32px;
+  gap: 16px;
+}
+section .button {
+  background-color: #3563e9;
+  border-radius: 20px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 44px 0px 44px;
+}
+section .button i {
+  font-size: 15px;
+  color: white;
+}
+section .selec {
+  display: flex;
+  gap: 20px;
+}
+section .selec div {
+  display: flex;
+  flex-direction: column;
+}
+section .selec div label p {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+section .selec div select {
+  border: 0;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 375px) {
+  .locations {
+    flex-direction: column;
+  }
+  .locations .button1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */
